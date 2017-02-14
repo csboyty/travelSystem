@@ -1,0 +1,353 @@
+html{
+    height: 100%;
+    width:100%;
+}
+body{
+    margin: 0px;
+    padding:0px;
+    height: 100%;
+    position: relative;
+    font-family: "Arail","微软雅黑","Heiti";
+    background: #ececec!important;
+}
+ul{
+    padding:0px;
+    margin: 0px;
+    list-style: none;
+}
+a{
+    text-decoration: none!important;
+}
+label.error{
+    color: red;
+}
+.hidden{
+    display: none;
+}
+.left{
+    position: fixed;
+    top:70px;
+    left: 0;
+    width:200px;
+    bottom: 0;
+    overflow:auto;
+    padding: 10px 0 20px;
+    box-sizing: border-box;
+}
+.right{
+    border-left: 1px solid #ccccc8;
+    background: #efefef;
+    padding:50px 30px;
+    position: fixed;
+    left:200px;
+    top:70px;
+    bottom: 0px;
+    right: 0px;
+    overflow: auto;
+}
+.main{
+    width: 100%;
+    margin: 0px auto 0px auto;
+}
+.hasRightBorder{
+    border-right:1px solid #ccc;
+}
+.hasLeftBorder{
+    border-left:1px solid #ccc;
+}
+.header{
+    position: relative;
+    background: #373737;
+    height: 70px;
+}
+
+/**
+*logo
+*/
+.logo{
+    padding-left: 50px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top:15px;
+    left: 20px;
+    background:url(../../images/app/logo_white@2x.png) no-repeat left center;
+    background-size: contain;
+}
+/*topNav*/
+.topNav{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 70px;
+    width:200px;
+}
+.topNav ul{
+    display: flex;
+}
+.topNav ul li{
+    flex:1;
+}
+.topNav ul li a{
+    display: block;
+    width:100%;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 12px;
+    color: #efefef;
+}
+.topNav ul li a:hover{
+    color: #ccc;
+}
+/**
+*menu
+*/
+.menu{
+
+}
+.menu .separate{
+    height: 10px;
+}
+.menu .item {
+    min-height: 40px;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+    position: relative;
+    background: #fff;
+    margin-bottom: -1px;
+}
+.menu .item .glyphicon{
+    padding: 0px 15px;
+    cursor: pointer;
+}
+.menu .item .rightIcon{
+    position: absolute;
+    top:15px;
+    right: 0;
+}
+.menu .item .link{
+    font-size: 14px;
+    color: #727171;
+    display: inline-block;
+    position: absolute;
+    left:34px;
+    top:0px;
+    bottom: 0px;
+    right:0px;
+    height: 100%;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.menu .item:hover{
+    background: #eef8f5;
+}
+.menu .item:hover .link{
+    color: #00A67F;
+}
+/*.menu .item:hover .subMenu{
+    display: block;
+}*/
+.subMenu{
+    background: #eef8f5;
+    display: none;
+}
+.subMenu .sItem{
+    height: 35px;
+    position: relative;
+}
+.subMenu .sItem .circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    background: #aaa;
+    font-size: 0px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.subMenu .sItem .sLink{
+    font-size: 12px;
+    color: #727171;
+    display: inline-block;
+    position: absolute;
+    left:34px;
+    top:0px;
+    bottom: 0px;
+    right:0px;
+    height: 100%;
+    padding-left: 25px;
+}
+.subMenu .sItem:hover .circle {
+    background: #00A67F;
+}
+.subMenu .sItem:hover .sLink{
+    color: #00A67F;
+}
+
+/**
+*复写datatable
+*/
+.tableSearchContainer{
+    text-align: right;
+    float: right !important;
+    position: relative;
+    width:60% !important;
+}
+.tableSearchContainer label{
+    float: left;
+    line-height: 34px;
+    font-weight: normal;
+}
+.tableSearchContainer .col{
+    float: left;
+    width: 100px;
+    margin: 0px 5px;
+}
+table.dataTable{
+    margin-top: 20px;
+    width: 100%;
+}
+table.dataTable thead {
+    background: #f5f5f5;
+}
+table.dataTable thead th{
+    color: #00A67F;
+    border: none;
+    font-weight: normal;
+    padding: 5px 20px;
+    text-align: left;
+    line-height: 30px!important;
+}
+table.dataTable thead th:last-child{
+    text-align: right;
+}
+table.dataTable tr{
+    line-height: 25px!important;
+    border-bottom: #ddd solid 1px;
+    border-top: #ddd solid 1px;
+    margin-bottom:-1px;
+}
+
+table.dataTable tr.odd{
+    background:transparent;
+}
+table.dataTable tr:hover,table.dataTable tr.odd:hover{
+    background:#f5f5f5;
+    
+}
+table.dataTable td {
+    padding: 5px 10px!important;
+    text-align: left;
+}
+table.dataTable td:last-child{
+    text-align: right;
+}
+table.dataTable .thumb{
+    width: 100px;
+    height: auto;
+}
+table.dataTable td a{
+    padding: 5px 10px;
+    display: inline-block;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    margin:5px 0 0 10px;
+    color: #333;
+}
+table.dataTable td select{
+    padding: 5px 10px;
+    display: inline-block;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    margin:5px 0 0 10px;
+    color: #333;
+}
+table.dataTable td a:hover{
+    background:#f5f5f5;
+}
+table.dataTable td a.delete{
+    color:#d32d39;
+    border:#d32d39 1px solid;
+}
+table.dataTable td a.delete:hover{
+    background:#d32d39;
+    color: #fff;
+}
+.dataTables_paginate,.dataTables_info{
+    margin-top: 15px;
+}
+
+
+/********覆写bootstrap*************/
+
+.panel{
+    border-radius: 0;
+}
+
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+.text-success{
+    color:#00A67F;
+}
+.btn-success{
+    background: #00A67F;
+    border: none;
+    box-shadow: 0 4px 0 #018566;
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus,
+.btn-success:active:hover,
+.btn-success:active:focus{
+    border:none;
+    background:#009774;
+    box-shadow: 0 4px 0 #018566;
+}
+.paging_full_numbers a.paginate_button, .paging_full_numbers a.paginate_active{
+    padding:10px;
+    border:#ddd 1px solid;
+    background:#fff;
+}
+.paging_full_numbers a.paginate_button:hover{
+    background:#f5f5f5;
+}
+.paging_full_numbers a.paginate_active{
+    background:#f5f5f5;
+}
+.paging_full_numbers a.paginate_active:hover{
+    background: #ddd;
+}
+/**
+*loading
+*/
+.loading{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    opacity: .5;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    background: #000;
+}
+.loading .text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    display: block;
+    width: 200px;
+    border: #fff 1px solid;
+    text-align: center;
+    padding: 10px;
+    transform: translate(-50%,-50%);
+}

@@ -1,0 +1,100 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0px;
+    padding:0px;
+    height: 100%;
+    position: relative;
+    font-family: "Arail","微软雅黑","Heiti";
+    background: #373737;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.pCenter{
+    position: absolute;
+    height: 350px;
+    width: 410px;
+    background:#fff;
+    left:50%;
+    top:50%;
+    margin: -175px 0px 0px -205px;
+    box-shadow:2px 2px 6px rgba(0,0,0,0.3);
+}
+.tCenter{
+    text-align: center;
+}
+.loginIcon{
+    display: block;
+    font-size: 0px;
+    background: url(../../images/app/logo_black@2x.png) no-repeat center #fff;
+    background-size: 40%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    left:50%;
+    top:0;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.logo{
+    text-align: center;
+    margin: 70px auto 20px;
+    font-size: 24px;
+}
+.row{
+    width: 70%;
+    margin: 30px auto;
+    font-size: 14px;
+    position: relative;
+}
+.ctrlLabel{
+    color: #727171;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.ctrlInput{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background: #f4f5f7;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+}
+.ctrlInput.error {
+    border: #e76565 solid 1px;
+    background: #f7e3e3;
+}
+.ctrlBtn{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    background: #00A67F;
+    border: none;
+    box-shadow: 0 4px 0 #018566;
+    border-radius: 4px;
+}
+.ctrlBtn:hover{
+    border:none;
+    background:#009774;
+    box-shadow: 0 4px 0 #018566;
+    cursor: pointer;
+}
+label.error{
+    color: #d92929;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    width:250px;
+    margin:5px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
